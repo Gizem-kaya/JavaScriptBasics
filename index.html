@@ -1,0 +1,48 @@
+<!--
+- Created and developed by Gizem Keskin in 2023.
+-->
+
+<!--
+- JavaScript codes can be run inside of a browser or a Node.
+- Browsers and Nodes provide a runtime environtment to JavaScript code.
+- Every browser has a JavaScript engine.
+- Node is a C++ program includes Google's V8 JavaScript Engine. 
+- So we can run JavaScript code outside of the browser.
+- ECMAScript is a specification. 
+- JavaScript is a programming language that confirms to that specification. 
+- ECMA organization is responsible for defining standarts.
+
+- If we want to try small scripts on the browser. 
+- We can easily write down the scripts to inspect element-> Console screen in the browser.
+
+- Live server, in vs code tools, is a lightweight webserver and we use it for seving our web application.
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>
+        Hi, this the first study of Gizem.
+    </h1>
+
+    <!--
+    - As a best practice we should add the our JavaScript codes at the end of the body section in between <script></script> tags.
+    - We use html for the content and JavaScript for the behaviour. 
+    - So we should seperate these from each other(Seperation of Concerns). 
+    - To be able to do that we need to create a js file and forward the behavioural part of the html file(between script tags) to the new js file(in our cas it is index.js). 
+    - After that we should indicate our new index.js file will be used in index.html file in the script tags.
+    -->
+    <script src="objects.js"></script>
+    <script src="basicFunctions.js"></script>  <!--We need to write dependencies in this order because when we use index.js we will need basicFunctions.js already-->
+    <script src="index.js">
+        // send this line to JavaScript code - console.log('This my first log on the console!');
+    </script>
+</body>
+</html>
