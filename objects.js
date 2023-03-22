@@ -77,14 +77,26 @@ function copyObjectOld(originalObject){
     return copyObject;
 }
 
-// Copy an object (new method)
-// Copies the second argument and pastes to the first argument. So the first argument is gonna expand.
+// Copy an combine objects (new method)
+// Copies the second argument and pastes to the first argument. So the first argument is gonna expand. 
 
 function copyObjectNew(originalObject){
 
     return Object.assign({ 'color': 'yellow'}, originalObject);
      
 }
+
+// Clonining an object to another has a method which is the best.
+
+function cloneObjectEasily(originalObject){
+    return { ...originalObject};    // spread operator is used for cloning objects. It brings all the stuffs in an object and by using {} we can create a new object.
+}
+
+// Data Objects
+
+const now = new Date();
+const date1 = new Date('April 21 2023 12:00');
+const date2 = new Date(2023, 3, 21, 12);
 
 
 

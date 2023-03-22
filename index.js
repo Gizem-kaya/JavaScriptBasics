@@ -16,7 +16,7 @@ console.log('This my first log on the console!');
 
 //Primitives copied by their value.
 
-let yourName = 'Gizem';     // String
+let yourName = 'Gizem';     // String. String is a primitive type and there is a string type that belongs objects.
 let yourAge = 28;           // Number (All numbers can be declared with number :))
 let isApproved = false;     // Boolean
 let firsName = undefined;   // undefined (It is a type and also a value.)
@@ -203,3 +203,28 @@ Object.entries(constructorCircle); // Return the key, value pairs in the object.
 
 console.log(copyObjectOld(constructorCircle)); // {radius: 2, draw: ƒ, calculate: ƒ}
 console.log(copyObjectNew(constructorCircle)); // {color: 'yellow', radius: 2, draw: ƒ, calculate: ƒ}
+
+
+/*********************************************************/
+
+// Template Literals
+
+// They are used by writing string as is shown on the browser or output.
+
+const nameOfPerson = "Gizem";
+
+const templateLiteral = `Hey this 
+is ${nameOfPerson}'s "template literal". `
+
+console.log(templateLiteral);
+
+// This literal is equal with below.
+
+const stringLiteral = 'Hey this \nis ' + nameOfPerson + '\'s \"template literal\". '
+console.log(stringLiteral);
+
+// The outputs are the same.
+/**
+ * Hey this 
+ * is Gizem's "template literal".
+ */
