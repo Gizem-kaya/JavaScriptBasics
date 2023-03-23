@@ -1,17 +1,4 @@
 
-// if we don't define a variable, the value of the variable automatically asigned to "undefined".
-
-let name; 
-
-// We are using camel notation in JavaScript. 
-
-// Constants
-const jobName = 'Engineer';
-
-console.log('This my first log on the console!');
-
-/*********************************************************/
-
 // Primitive types
 
 //Primitives copied by their value.

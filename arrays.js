@@ -79,3 +79,11 @@ firstArray.every(function(value){
 firstArray.some((value) => {
     return value === 1;
 });
+
+// Reduce function
+
+const numbers = [1, 2, 3, 4, 5];
+const reduceSum = numbers.reduce((accumulator, currentValue) => {
+  return accumulator + currentValue;
+}, 0);
+console.log(reduceSum); // Output: 15
